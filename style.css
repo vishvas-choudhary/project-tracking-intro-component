@@ -27,6 +27,149 @@ body {
 h1 {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 700;
-  font-size: 4.5rem;
+  font-size: 5.5rem;
+  line-height: 1;
+  letter-spacing: 1px;
   margin-bottom: 4rem;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--veryDarkBlue);
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  border-bottom: 1px solid var(--veryDarkBlue);
+}
+
+a span,
+.dot {
+  color: var(--grayishBlue);
+}
+
+a span:hover {
+  border-bottom: 1px solid var(--grayishBlue);
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  background-color: var(--red);
+  color: white;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  padding: 1.8rem 3rem;
+  letter-spacing: 2px;
+  margin-right: 2rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  /* height: 80rem; */
+  overflow: hidden;
+  position: relative;
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: 0%;
+  /* transform: translate(50%, 50%); */
+  width: 80rem;
+  height: 80rem;
+  background-color: var(--lightGrayishBlue);
+  border-radius: 100px;
+  z-index: -1;
+}
+
+/* NAVIGATION */
+.header {
+  padding: 6rem 16.5rem 0 16.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12rem;
+}
+
+.logo {
+  flex: 3;
+}
+
+.nav {
+  flex: 2;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* SECTION */
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+.left {
+  flex: 2;
+  margin-left: 16.5rem;
+}
+
+.light-text {
+  color: var(--darkGrayishBlue);
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 4px;
+}
+
+.light-text span {
+  color: white;
+  background-color: var(--veryDarkBlue);
+  font-weight: bold;
+  padding: 0.8rem 1rem;
+  border-radius: 100px;
+  letter-spacing: 2px;
+  margin-right: 1rem;
+}
+
+.sub-heading {
+  margin-bottom: 3rem;
+}
+
+.description {
+  margin-bottom: 6rem;
+}
+
+.preview {
+  display: inline;
+}
+
+.right {
+  flex: 3;
+  background-image: url(./images/illustration-devices.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+  height: 46rem;
 }
