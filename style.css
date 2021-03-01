@@ -1,0 +1,32 @@
+:root {
+  --red: hsl(0, 100%, 68%);
+
+  --veryDarkBlue: hsl(230, 29%, 20%);
+  --darkGrayishBlue: hsl(230, 11%, 40%);
+  --grayishBlue: hsl(231, 7%, 65%);
+  --lightGrayishBlue: hsl(207, 33%, 95%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Barlow", sans-serif;
+  line-height: 1.5;
+  color: var(--veryDarkBlue);
+}
+
+h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 4.5rem;
+  margin-bottom: 4rem;
+}
