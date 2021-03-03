@@ -22,6 +22,10 @@ body {
   font-family: "Barlow", sans-serif;
   line-height: 1.5;
   color: var(--veryDarkBlue);
+  max-width: 144rem;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
 
 h1 {
@@ -80,15 +84,19 @@ button:hover {
   opacity: 0.8;
 }
 
-.container {
-  max-width: 144rem;
-  margin: 0 auto;
-  /* height: 80rem; */
+.wrapper {
   overflow: hidden;
+}
+
+.container {
+  /* height: 80rem; */
+  max-width: 111rem;
+  margin: 0 auto;
+  padding: 1rem;
   position: relative;
 }
 
-.container::after {
+.wrapper::after {
   content: "";
   position: absolute;
   top: -50%;
@@ -103,7 +111,7 @@ button:hover {
 
 /* NAVIGATION */
 .header {
-  padding: 6rem 16.5rem 0 16.5rem;
+  padding-top: 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -128,12 +136,12 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10rem;
+  margin-bottom: 18rem;
 }
 
 .left {
   flex: 2;
-  margin-left: 16.5rem;
+  /* margin-left: 16.5rem; */
 }
 
 .light-text {
@@ -166,10 +174,20 @@ button:hover {
 }
 
 .right {
+  position: relative;
   flex: 3;
+}
+
+.right::after {
+  content: "";
+  position: absolute;
   background-image: url(./images/illustration-devices.svg);
+  top: 0;
+  left: 0;
+  transform: translate(10%, -40%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left center;
   height: 46rem;
+  width: 100rem;
 }
